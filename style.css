@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden; /* remove a barra de rolagem horizontal */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #6b38f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-weight: 700;
+  color: black;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  color: black;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+header nav li {
+  margin-left: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color:  #4a0347;
+}
+
+/* Estilos da nova section */
+.quem-somos {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.quem-somos h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.quem-somos p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Estilos da seção de produtos */
+.produtos {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+}
+
+.produtos h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.produtos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.produto {
+  width: 300px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.produto h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.produto .preco {
+  font-size: 24px;
+  color: #6b38f7;;
+  margin-bottom: 20px;
+  }
+  
+  .produto .btn {
+  display: block;
+  background-color: #6b38f7;;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  }
+  
+  .produto .btn:hover {
+  background-color: #6b38f7;;
+  }
+  
+  /* Estilos da seção de depoimentos */
+  .depoimentos {
+  padding: 60px 0;
+  }
+  
+  .depoimentos h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  }
+  
+  .depoimentos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+  
+  .depoimento {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  margin: 0 20px 20px 0;
+  padding: 20px;
+  width: 400px;
+  }
+  
+  .depoimento p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  }
+  
+  .depoimento .autor {
+  font-size: 16px;
+  font-style: italic;
+  text-align: right;
+  }
+  
+  /* Footer */
+  
+  footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  }
+  
+  footer p {
+  margin: 0;
+  }
+  
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+  .container {
+  max-width: 100%;
+  padding: 0 10px;
+  
+  }
+  
+  header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  }
+  
+  header h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  header nav ul {
+  margin-top: 20px;
+  justify-content: center;
+  }
+  
+  .quem-somos {
+  padding: 20px;
+  }
+  
+  .produtos-container {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .produto {
+  width: 80%;
+  margin: 20px 0;
+  }
+  
+  .depoimentos-container {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .depoimento {
+  width: 80%;
+  }
+  }
+
+
+   
