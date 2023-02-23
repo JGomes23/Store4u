@@ -10,6 +10,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
+  overflow-x: hidden; /* remove a barra de rolagem horizontal */
 }
 
 .container {
@@ -57,7 +58,6 @@ header nav a {
 }
 
 header nav a:hover {
-  
   color:  #4a0347;
 }
 
@@ -79,7 +79,6 @@ header nav a:hover {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
 
 /* Estilos da seção de produtos */
 .produtos {
@@ -124,11 +123,11 @@ header nav a:hover {
 
 .produto .preco {
   font-size: 24px;
-  color:  #6b38f7;;
+  color: #6b38f7;;
   margin-bottom: 20px;
-}
-
-.produto .btn {
+  }
+  
+  .produto .btn {
   display: block;
   background-color: #6b38f7;;
   color: #fff;
@@ -140,31 +139,31 @@ header nav a:hover {
   margin-top: 20px;
   text-decoration: none;
   transition: background-color 0.3s;
-}
-
-.produto .btn:hover {
-  background-color:  #6b38f7;;
-}
-
-/* Estilos da seção de depoimentos */
-.depoimentos {
+  }
+  
+  .produto .btn:hover {
+  background-color: #6b38f7;;
+  }
+  
+  /* Estilos da seção de depoimentos */
+  .depoimentos {
   padding: 60px 0;
-}
-
-.depoimentos h2 {
+  }
+  
+  .depoimentos h2 {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
-}
-
-.depoimentos-container {
+  }
+  
+  .depoimentos-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.depoimento {
+  }
+  
+  .depoimento {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
@@ -197,116 +196,55 @@ header nav a:hover {
   footer p {
   margin: 0;
   }
-
-
-   /* Media queries */
   
-   @media (max-width: 768px) {
-    .produtos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-    
-    .produto {
-    margin: 20px;
-    width: 300px;
-    }
-    
-    .header {
-    display: flex;
-    justify-content: space-between;
-    }
-    
-    .header h1 {
-    margin: 0;
-    padding: 20px;
-    text-align: left;
-    }
-    
-    .header ul {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 20px;
-    text-align: right;
-    }
-    }
-    /* Estilos para telas com largura menor ou igual a 600px */
-  @media only screen and (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+  .container {
+  max-width: 100%;
+  padding: 0 10px;
   
-    header {
-      height: 100px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    h1 {
-      font-size: 32px;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  
-    nav {
-      width: 100%;
-      margin-top: 20px;
-    }
-  
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    li {
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-  
-    .produtos-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .produto {
-      margin-bottom: 20px;
-    }
-  
-    .produto img {
-      width: 100%;
-    }
-  
-    .preco {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-  
-    .btn {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      width: 100%;
-    }
-  
-    .depoimentos-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .depoimento {
-      margin-bottom: 20px;
-    }
-  
-    .autor {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
   }
   
+  header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  }
+  
+  header h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  header nav ul {
+  margin-top: 20px;
+  justify-content: center;
+  }
+  
+  .quem-somos {
+  padding: 20px;
+  }
+  
+  .produtos-container {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .produto {
+  width: 80%;
+  margin: 20px 0;
+  }
+  
+  .depoimentos-container {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .depoimento {
+  width: 80%;
+  }
+  }
+
+
+   
